@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432041D31D88EFA40097881D /* A+ – Chào Mào Mái Hót.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 432041CB1D88EFA40097881D /* A+ – Chào Mào Mái Hót.mp3 */; };
+		432041D41D88EFA40097881D /* bird0.png in Resources */ = {isa = PBXBuildFile; fileRef = 432041CC1D88EFA40097881D /* bird0.png */; };
+		432041D51D88EFA40097881D /* bird1.png in Resources */ = {isa = PBXBuildFile; fileRef = 432041CD1D88EFA40097881D /* bird1.png */; };
+		432041D61D88EFA40097881D /* bird2.png in Resources */ = {isa = PBXBuildFile; fileRef = 432041CE1D88EFA40097881D /* bird2.png */; };
+		432041D71D88EFA40097881D /* bird3.png in Resources */ = {isa = PBXBuildFile; fileRef = 432041CF1D88EFA40097881D /* bird3.png */; };
+		432041D81D88EFA40097881D /* bird4.png in Resources */ = {isa = PBXBuildFile; fileRef = 432041D01D88EFA40097881D /* bird4.png */; };
+		432041D91D88EFA40097881D /* bird5.png in Resources */ = {isa = PBXBuildFile; fileRef = 432041D11D88EFA40097881D /* bird5.png */; };
+		432041DA1D88EFA40097881D /* jungle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 432041D21D88EFA40097881D /* jungle.jpg */; };
 		438DB3AE1D884A050050B2E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DB3AD1D884A050050B2E9 /* AppDelegate.swift */; };
 		438DB3B01D884A050050B2E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DB3AF1D884A050050B2E9 /* ViewController.swift */; };
 		438DB3B31D884A050050B2E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438DB3B11D884A050050B2E9 /* Main.storyboard */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		432041CB1D88EFA40097881D /* A+ – Chào Mào Mái Hót.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A+ – Chào Mào Mái Hót.mp3"; sourceTree = "<group>"; };
+		432041CC1D88EFA40097881D /* bird0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird0.png; sourceTree = "<group>"; };
+		432041CD1D88EFA40097881D /* bird1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird1.png; sourceTree = "<group>"; };
+		432041CE1D88EFA40097881D /* bird2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird2.png; sourceTree = "<group>"; };
+		432041CF1D88EFA40097881D /* bird3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird3.png; sourceTree = "<group>"; };
+		432041D01D88EFA40097881D /* bird4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird4.png; sourceTree = "<group>"; };
+		432041D11D88EFA40097881D /* bird5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird5.png; sourceTree = "<group>"; };
+		432041D21D88EFA40097881D /* jungle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jungle.jpg; sourceTree = "<group>"; };
 		438DB3AA1D884A050050B2E9 /* DemoBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438DB3AD1D884A050050B2E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438DB3AF1D884A050050B2E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +90,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		432041CA1D88EF7F0097881D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				432041CB1D88EFA40097881D /* A+ – Chào Mào Mái Hót.mp3 */,
+				432041CC1D88EFA40097881D /* bird0.png */,
+				432041CD1D88EFA40097881D /* bird1.png */,
+				432041CE1D88EFA40097881D /* bird2.png */,
+				432041CF1D88EFA40097881D /* bird3.png */,
+				432041D01D88EFA40097881D /* bird4.png */,
+				432041D11D88EFA40097881D /* bird5.png */,
+				432041D21D88EFA40097881D /* jungle.jpg */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		438DB3A11D884A040050B2E9 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +128,7 @@
 		438DB3AC1D884A050050B2E9 /* DemoBird */ = {
 			isa = PBXGroup;
 			children = (
+				432041CA1D88EF7F0097881D /* Source */,
 				438DB3AD1D884A050050B2E9 /* AppDelegate.swift */,
 				438DB3AF1D884A050050B2E9 /* ViewController.swift */,
 				438DB3B11D884A050050B2E9 /* Main.storyboard */,
@@ -229,9 +261,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432041D71D88EFA40097881D /* bird3.png in Resources */,
 				438DB3B81D884A050050B2E9 /* LaunchScreen.storyboard in Resources */,
+				432041D91D88EFA40097881D /* bird5.png in Resources */,
+				432041D81D88EFA40097881D /* bird4.png in Resources */,
+				432041D61D88EFA40097881D /* bird2.png in Resources */,
 				438DB3B51D884A050050B2E9 /* Assets.xcassets in Resources */,
+				432041D51D88EFA40097881D /* bird1.png in Resources */,
+				432041D41D88EFA40097881D /* bird0.png in Resources */,
+				432041D31D88EFA40097881D /* A+ – Chào Mào Mái Hót.mp3 in Resources */,
 				438DB3B31D884A050050B2E9 /* Main.storyboard in Resources */,
+				432041DA1D88EFA40097881D /* jungle.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +524,7 @@
 				438DB3D41D884A050050B2E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		438DB3D51D884A050050B2E9 /* Build configuration list for PBXNativeTarget "DemoBirdTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +533,7 @@
 				438DB3D71D884A050050B2E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		438DB3D81D884A050050B2E9 /* Build configuration list for PBXNativeTarget "DemoBirdUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +542,7 @@
 				438DB3DA1D884A050050B2E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
