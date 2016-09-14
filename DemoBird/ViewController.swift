@@ -7,19 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
     var bird = UIImageView()
-
+    var audioPlayer = AVAudioPlayer()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         drawJungle()
         addBird()
         flyUpAndDown()
-//        playSong()
+        playSong()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -46,14 +49,61 @@ class ViewController: UIViewController {
     }
     func flyUpAndDown() {
         UIView.animateWithDuration(4, animations: {
-            self.bird.center = CGPointMake(self.view.bounds.size.width , self.view.bounds.size.height )
+            self.bird.center = CGPointMake(self.view.bounds.size.width - 50, self.view.bounds.size.height - 50 )
             
+            //DI XUONG
             
-            
-        })
+            })
         { (finished) in
+            self.bird.transform = CGAffineTransformConcat(CGAffineTransformScale(self.bird.transform,-1,1) , CGAffineTransformMakeRotation(0))
+            
+            
+            
+            UIView.animateWithDuration(4, animations: {
+                self.bird.center = CGPointMake( 50 , self.view.bounds.size.height - 50 )
                 
+                
+                
+                })
+            { (finished) in
+                self.bird.transform = CGAffineTransformConcat(CGAffineTransformScale(self.bird.transform,-1,1) , CGAffineTransformMakeRotation(-45))
+                
+                
+                UIView.animateWithDuration(4, animations: {
+                    self.bird.center = CGPointMake( self.view.bounds.size.width - 50 , 50 )
+                    
+                    
+                    
+                    })
+                { (finished) in
+                    self.bird.transform = CGAffineTransformConcat(CGAffineTransformScale(self.bird.transform,-1,1) , CGAffineTransformMakeRotation(45))
+                    
+                    UIView.animateWithDuration(4, animations: {
+                        self.bird.center = CGPointMake( 50 , 50 )
+                        
+                        
+                        
+                        })
+                    { (finished) in
+                        self.bird.transform = CGAffineTransformIdentity
+                        self.flyUpAndDown()
+                        
+                        
+                    }
+                    
+                }
+                
+                
+            }
+   
         }
+    }
+    func playSong()  {
+        let filePath = NSBundle.mainBundle().pathForResource("A+ – Chào Mào Mái Hót", ofType: ".mp3")
+        let URL = NSURL (fileURLWithPath: filePath!)
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: URL)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
         
         
     }
